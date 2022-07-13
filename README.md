@@ -5,6 +5,6 @@
 ### Grupo conformado por:
 
 - Carlos Jimenez - 1105749
-- Juan Muñoz - 1111111
-- Mario Lora - 2222222
-- Adam Guerrero -3333333
+- Juan Muñoz - 1106329
+- Mario Lora - 1106278
+- Adam Guerrero -1106129
