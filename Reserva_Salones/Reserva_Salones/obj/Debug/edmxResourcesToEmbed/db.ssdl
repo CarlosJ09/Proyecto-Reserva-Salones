@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SALON.BO.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012.Azure" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Formulario">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="nchar" MaxLength="450" Nullable="false" />
+    <Property Name="Cedula" Type="varchar" MaxLength="13" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="80" Nullable="false" />
+    <Property Name="Telefono" Type="varchar" MaxLength="10" />
+    <Property Name="Email" Type="varchar" MaxLength="100" />
+    <Property Name="IdSalon" Type="int" Nullable="false" />
+    <Property Name="Salon" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="MaxPersonas" Type="int" Nullable="false" />
+    <Property Name="FechaReserva" Type="datetime" Nullable="false" />
+    <Property Name="FechaCreacion" Type="date" />
+  </EntityType>
+  <EntityType Name="Salon">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TipoSalon" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="Disponible" Type="bit" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_Formulario_Salon">
+    <End Role="Salon" Type="Self.Salon" Multiplicity="1" />
+    <End Role="Formulario" Type="Self.Formulario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Salon">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Formulario">
+        <PropertyRef Name="IdSalon" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="SALONBOStoreContainer">
+    <EntitySet Name="Formulario" EntityType="Self.Formulario" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Salon" EntityType="Self.Salon" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Formulario_Salon" Association="Self.FK_Formulario_Salon">
+      <End Role="Salon" EntitySet="Salon" />
+      <End Role="Formulario" EntitySet="Formulario" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

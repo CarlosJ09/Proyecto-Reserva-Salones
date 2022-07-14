@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SALON.BO" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Formulario">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="String" MaxLength="450" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="Cedula" Type="String" MaxLength="13" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Nombre" Type="String" MaxLength="80" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Telefono" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Email" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="IdSalon" Type="Int32" Nullable="false" />
+    <Property Name="Salon" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="MaxPersonas" Type="Int32" Nullable="false" />
+    <Property Name="FechaReserva" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="FechaCreacion" Type="DateTime" Precision="0" />
+    <NavigationProperty Name="Salon1" Relationship="Self.FK_Formulario_Salon" FromRole="Formulario" ToRole="Salon" />
+  </EntityType>
+  <EntityType Name="Salon">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TipoSalon" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Disponible" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Formularios" Relationship="Self.FK_Formulario_Salon" FromRole="Salon" ToRole="Formulario" />
+  </EntityType>
+  <Association Name="FK_Formulario_Salon">
+    <End Role="Salon" Type="Self.Salon" Multiplicity="1" />
+    <End Role="Formulario" Type="Self.Formulario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Salon">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Formulario">
+        <PropertyRef Name="IdSalon" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Formularios" EntityType="Self.Formulario" />
+    <EntitySet Name="Salons" EntityType="Self.Salon" />
+    <AssociationSet Name="FK_Formulario_Salon" Association="Self.FK_Formulario_Salon">
+      <End Role="Salon" EntitySet="Salons" />
+      <End Role="Formulario" EntitySet="Formularios" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
