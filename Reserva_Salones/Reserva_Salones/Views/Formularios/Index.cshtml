@@ -1,10 +1,10 @@
 ﻿@model IEnumerable<Reserva_Salones.Formulario>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Reservas";
 }
 
-<h2>Index</h2>
+<h2>Reservas</h2>
 
 <p>
     @Html.ActionLink("Create New", "Create")
@@ -22,9 +22,6 @@
         </th>
         <th>
             @Html.DisplayNameFor(model => model.Email)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Salon)
         </th>
         <th>
             @Html.DisplayNameFor(model => model.MaxPersonas)
@@ -54,9 +51,6 @@
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.Email)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Salon)
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.MaxPersonas)

@@ -12,18 +12,13 @@ namespace Reserva_Salones
     using System;
     using System.Collections.Generic;
     
-    public partial class Formulario
+    public partial class database_firewall_rules
     {
-        public string Id { get; set; }
-        public string Cedula { get; set; }
-        public string Nombre { get; set; }
-        public string Telefono { get; set; }
-        public string Email { get; set; }
-        public int IdSalon { get; set; }
-        public int MaxPersonas { get; set; }
-        public System.DateTime FechaReserva { get; set; }
-        public Nullable<System.DateTime> FechaCreacion { get; set; }
-    
-        public virtual Salon Salon1 { get; set; }
+        public int id { get; set; }
+        public string name { get; set; }
+        public string start_ip_address { get; set; }
+        public string end_ip_address { get; set; }
+        public System.DateTime create_date { get; set; }
+        public System.DateTime modify_date { get; set; }
     }
 }

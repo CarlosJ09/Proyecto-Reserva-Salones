@@ -8,6 +8,8 @@
         <EntityTypeShape EntityType="SALON.BO.Formulario" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
         <EntityTypeShape EntityType="SALON.BO.Salon" Width="1.5" PointX="0.75" PointY="1.625" IsExpanded="true" />
         <AssociationConnector Association="SALON.BO.FK_Formulario_Salon" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="SALON.BO.database_firewall_rules" Width="1.5" PointX="4" PointY="5.25" />
+        <EntityTypeShape EntityType="SALON.BO.ipv6_database_firewall_rules" Width="1.5" PointX="6.25" PointY="5.25" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
