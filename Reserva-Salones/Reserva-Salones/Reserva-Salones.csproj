@@ -226,16 +226,16 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Formularios\Create.cshtml" />
-    <Content Include="Views\Formularios\Delete.cshtml" />
-    <Content Include="Views\Formularios\Details.cshtml" />
-    <Content Include="Views\Formularios\Edit.cshtml" />
-    <Content Include="Views\Formularios\Index.cshtml" />
     <Content Include="Views\Salones\Create.cshtml" />
     <Content Include="Views\Salones\Delete.cshtml" />
     <Content Include="Views\Salones\Details.cshtml" />
     <Content Include="Views\Salones\Edit.cshtml" />
     <Content Include="Views\Salones\Index.cshtml" />
+    <Content Include="Views\Formularios\Create.cshtml" />
+    <Content Include="Views\Formularios\Delete.cshtml" />
+    <Content Include="Views\Formularios\Details.cshtml" />
+    <Content Include="Views\Formularios\Edit.cshtml" />
+    <Content Include="Views\Formularios\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

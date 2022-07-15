@@ -63,7 +63,7 @@ namespace Reserva_Salones.Controllers
         }
 
         // GET: Formularios/Edit/5
-        public ActionResult Edit(string id)
+        public ActionResult Edit(int? id)
         {
             if (id == null)
             {
