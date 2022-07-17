@@ -1,9 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Reserva_Salones",
-    "\\Reserva_Salones\\Reserva_Salones\\Controllers"
+    "\\Reserva-Salones",
+    "\\Reserva-Salones\\Reserva-Salones",
+    "\\Reserva-Salones\\Reserva-Salones\\Controllers"
   ],
-  "SelectedNode": "\\Reserva_Salones\\Reserva_Salones.sln",
+  "SelectedNode": "\\Reserva-Salones\\Reserva-Salones\\Controllers\\HomeController.cs",
   "PreviewInSolutionExplorer": false
 }

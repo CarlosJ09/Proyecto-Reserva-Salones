@@ -4,14 +4,15 @@
     <Key>
       <PropertyRef Name="Id" />
     </Key>
-    <Property Name="Id" Type="nchar" MaxLength="450" Nullable="false" />
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="Cedula" Type="nvarchar" MaxLength="80" Nullable="false" />
     <Property Name="Nombre" Type="nvarchar" MaxLength="80" Nullable="false" />
-    <Property Name="Telefono" Type="nvarchar" MaxLength="50" />
+    <Property Name="Telefono" Type="nvarchar" MaxLength="50" Nullable="false" />
     <Property Name="Email" Type="nvarchar" MaxLength="100" />
     <Property Name="IdSalon" Type="int" Nullable="false" />
     <Property Name="MaxPersonas" Type="int" Nullable="false" />
     <Property Name="FechaReserva" Type="datetime" Nullable="false" />
+    <Property Name="TiempoReserva" Type="time" Precision="7" Nullable="false" />
     <Property Name="FechaCreacion" Type="date" />
   </EntityType>
   <EntityType Name="Salon">
@@ -20,9 +21,9 @@
     </Key>
     <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="Imagen" Type="nvarchar" MaxLength="1000" Nullable="false" />
-    <Property Name="Nombre" Type="nvarchar" MaxLength="80" />
+    <Property Name="Nombre" Type="nvarchar" MaxLength="80" Nullable="false" />
     <Property Name="IdTipoSalon" Type="int" Nullable="false" />
-    <Property Name="Ubicacion" Type="nvarchar" MaxLength="200" />
+    <Property Name="Ubicacion" Type="nvarchar" MaxLength="200" Nullable="false" />
     <Property Name="Disponible" Type="bit" Nullable="false" />
   </EntityType>
   <EntityType Name="TipoSalon">

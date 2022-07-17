@@ -4,16 +4,17 @@
     <Key>
       <PropertyRef Name="Id" />
     </Key>
-    <Property Name="Id" Type="String" MaxLength="450" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="Id" Type="Int32" Nullable="false" />
     <Property Name="Cedula" Type="String" MaxLength="80" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="Nombre" Type="String" MaxLength="80" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="Telefono" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Telefono" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="Email" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
     <Property Name="IdSalon" Type="Int32" Nullable="false" />
     <Property Name="MaxPersonas" Type="Int32" Nullable="false" />
     <Property Name="FechaReserva" Type="DateTime" Nullable="false" Precision="3" />
     <Property Name="FechaCreacion" Type="DateTime" Precision="0" />
     <NavigationProperty Name="TipoSalon" Relationship="Self.FK_Formulario_Salon1" FromRole="Formulario" ToRole="TipoSalon" />
+    <Property Name="TiempoReserva" Type="Time" Nullable="false" Precision="7" />
   </EntityType>
   <EntityType Name="Salon">
     <Key>
@@ -21,9 +22,9 @@
     </Key>
     <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="Imagen" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="Nombre" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+    <Property Name="Nombre" Type="String" MaxLength="80" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="IdTipoSalon" Type="Int32" Nullable="false" />
-    <Property Name="Ubicacion" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Ubicacion" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="Disponible" Type="Boolean" Nullable="false" />
     <NavigationProperty Name="TipoSalon" Relationship="Self.FK_Salon_TipoSalon" FromRole="Salon" ToRole="TipoSalon" />
   </EntityType>

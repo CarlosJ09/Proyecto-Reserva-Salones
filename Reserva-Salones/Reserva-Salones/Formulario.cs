@@ -14,7 +14,7 @@ namespace Reserva_Salones
     
     public partial class Formulario
     {
-        public string Id { get; set; }
+        public int Id { get; set; }
         public string Cedula { get; set; }
         public string Nombre { get; set; }
         public string Telefono { get; set; }
@@ -23,6 +23,7 @@ namespace Reserva_Salones
         public int MaxPersonas { get; set; }
         public System.DateTime FechaReserva { get; set; }
         public Nullable<System.DateTime> FechaCreacion { get; set; }
+        public System.TimeSpan TiempoReserva { get; set; }
     
         public virtual TipoSalon TipoSalon { get; set; }
     }

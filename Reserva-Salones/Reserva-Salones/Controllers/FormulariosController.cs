@@ -49,7 +49,7 @@ namespace Reserva_Salones.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include = "Id,Cedula,Nombre,Telefono,Email,IdSalon,MaxPersonas,FechaReserva")] Formulario formulario)
-        {
+        { 
             if (ModelState.IsValid)
             {
                 formulario.FechaCreacion = DateTime.Now;
@@ -63,7 +63,7 @@ namespace Reserva_Salones.Controllers
         }
 
         // GET: Formularios/Edit/5
-        public ActionResult Edit(int? id)
+        public ActionResult Edit(string id)
         {
             if (id == null)
             {

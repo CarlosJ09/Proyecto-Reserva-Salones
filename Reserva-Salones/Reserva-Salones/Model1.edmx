@@ -4,19 +4,20 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012.Azure" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012.Azure" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="Formulario">
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Type="nchar" MaxLength="450" Nullable="false" />
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Cedula" Type="nvarchar" MaxLength="80" Nullable="false" />
           <Property Name="Nombre" Type="nvarchar" MaxLength="80" Nullable="false" />
-          <Property Name="Telefono" Type="nvarchar" MaxLength="50" />
+          <Property Name="Telefono" Type="nvarchar" MaxLength="50" Nullable="false" />
           <Property Name="Email" Type="nvarchar" MaxLength="100" />
           <Property Name="IdSalon" Type="int" Nullable="false" />
           <Property Name="MaxPersonas" Type="int" Nullable="false" />
           <Property Name="FechaReserva" Type="datetime" Nullable="false" />
+          <Property Name="TiempoReserva" Type="time" Precision="7" Nullable="false" />
           <Property Name="FechaCreacion" Type="date" />
         </EntityType>
         <EntityType Name="Salon">
@@ -25,9 +26,9 @@
           </Key>
           <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Imagen" Type="nvarchar" MaxLength="1000" Nullable="false" />
-          <Property Name="Nombre" Type="nvarchar" MaxLength="80" />
+          <Property Name="Nombre" Type="nvarchar" MaxLength="80" Nullable="false" />
           <Property Name="IdTipoSalon" Type="int" Nullable="false" />
-          <Property Name="Ubicacion" Type="nvarchar" MaxLength="200" />
+          <Property Name="Ubicacion" Type="nvarchar" MaxLength="200" Nullable="false" />
           <Property Name="Disponible" Type="bit" Nullable="false" />
         </EntityType>
         <EntityType Name="TipoSalon">
@@ -161,8 +162,7 @@ warning 6002: The table/view 'Reserva-Salones.sys.ipv6_database_firewall_rules' 
             <End Role="Salon" EntitySet="Salon" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -170,16 +170,17 @@ warning 6002: The table/view 'Reserva-Salones.sys.ipv6_database_firewall_rules' 
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Type="String" MaxLength="450" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Id" Type="Int32" Nullable="false" />
           <Property Name="Cedula" Type="String" MaxLength="80" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="Nombre" Type="String" MaxLength="80" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="Telefono" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Telefono" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="Email" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
           <Property Name="IdSalon" Type="Int32" Nullable="false" />
           <Property Name="MaxPersonas" Type="Int32" Nullable="false" />
           <Property Name="FechaReserva" Type="DateTime" Nullable="false" Precision="3" />
           <Property Name="FechaCreacion" Type="DateTime" Precision="0" />
           <NavigationProperty Name="TipoSalon" Relationship="Self.FK_Formulario_Salon1" FromRole="Formulario" ToRole="TipoSalon" />
+          <Property Name="TiempoReserva" Type="Time" Nullable="false" Precision="7" />
         </EntityType>
         <EntityType Name="Salon">
           <Key>
@@ -187,9 +188,9 @@ warning 6002: The table/view 'Reserva-Salones.sys.ipv6_database_firewall_rules' 
           </Key>
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Imagen" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="Nombre" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+          <Property Name="Nombre" Type="String" MaxLength="80" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="IdTipoSalon" Type="Int32" Nullable="false" />
-          <Property Name="Ubicacion" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="Ubicacion" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="Disponible" Type="Boolean" Nullable="false" />
           <NavigationProperty Name="TipoSalon" Relationship="Self.FK_Salon_TipoSalon" FromRole="Salon" ToRole="TipoSalon" />
         </EntityType>
@@ -323,6 +324,7 @@ warning 6002: The table/view 'Reserva-Salones.sys.ipv6_database_firewall_rules' 
           <EntitySetMapping Name="Formularios">
             <EntityTypeMapping TypeName="Model.Formulario">
               <MappingFragment StoreEntitySet="Formulario">
+                <ScalarProperty Name="TiempoReserva" ColumnName="TiempoReserva" />
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="Cedula" ColumnName="Cedula" />
                 <ScalarProperty Name="Nombre" ColumnName="Nombre" />
