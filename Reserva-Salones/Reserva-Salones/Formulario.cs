@@ -24,6 +24,8 @@ namespace Reserva_Salones
         public System.DateTime FechaReserva { get; set; }
         public Nullable<System.DateTime> FechaCreacion { get; set; }
         public System.TimeSpan TiempoReserva { get; set; }
+        public int IdNombreSalon { get; set; }
+        public string NombreSalon { get; set; }
     
         public virtual TipoSalon TipoSalon { get; set; }
     }

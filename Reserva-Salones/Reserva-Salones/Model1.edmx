@@ -15,6 +15,8 @@
           <Property Name="Telefono" Type="nvarchar" MaxLength="50" Nullable="false" />
           <Property Name="Email" Type="nvarchar" MaxLength="100" />
           <Property Name="IdSalon" Type="int" Nullable="false" />
+          <Property Name="IdNombreSalon" Type="int" Nullable="false" />
+          <Property Name="NombreSalon" Type="nvarchar" MaxLength="100" Nullable="false" />
           <Property Name="MaxPersonas" Type="int" Nullable="false" />
           <Property Name="FechaReserva" Type="datetime" Nullable="false" />
           <Property Name="TiempoReserva" Type="time" Precision="7" Nullable="false" />
@@ -181,6 +183,8 @@ warning 6002: The table/view 'Reserva-Salones.sys.ipv6_database_firewall_rules' 
           <Property Name="FechaCreacion" Type="DateTime" Precision="0" />
           <NavigationProperty Name="TipoSalon" Relationship="Self.FK_Formulario_Salon1" FromRole="Formulario" ToRole="TipoSalon" />
           <Property Name="TiempoReserva" Type="Time" Nullable="false" Precision="7" />
+          <Property Name="IdNombreSalon" Type="Int32" Nullable="false" />
+          <Property Name="NombreSalon" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
         </EntityType>
         <EntityType Name="Salon">
           <Key>
@@ -324,6 +328,8 @@ warning 6002: The table/view 'Reserva-Salones.sys.ipv6_database_firewall_rules' 
           <EntitySetMapping Name="Formularios">
             <EntityTypeMapping TypeName="Model.Formulario">
               <MappingFragment StoreEntitySet="Formulario">
+                <ScalarProperty Name="NombreSalon" ColumnName="NombreSalon" />
+                <ScalarProperty Name="IdNombreSalon" ColumnName="IdNombreSalon" />
                 <ScalarProperty Name="TiempoReserva" ColumnName="TiempoReserva" />
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="Cedula" ColumnName="Cedula" />
