@@ -15,6 +15,8 @@
     <Property Name="FechaCreacion" Type="DateTime" Precision="0" />
     <NavigationProperty Name="TipoSalon" Relationship="Self.FK_Formulario_Salon1" FromRole="Formulario" ToRole="TipoSalon" />
     <Property Name="TiempoReserva" Type="Time" Nullable="false" Precision="7" />
+    <Property Name="IdNombreSalon" Type="Int32" Nullable="false" />
+    <Property Name="NombreSalon" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
   </EntityType>
   <EntityType Name="Salon">
     <Key>

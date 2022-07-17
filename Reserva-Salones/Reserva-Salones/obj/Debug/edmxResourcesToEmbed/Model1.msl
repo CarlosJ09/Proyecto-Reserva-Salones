@@ -4,6 +4,8 @@
     <EntitySetMapping Name="Formularios">
       <EntityTypeMapping TypeName="Model.Formulario">
         <MappingFragment StoreEntitySet="Formulario">
+          <ScalarProperty Name="NombreSalon" ColumnName="NombreSalon" />
+          <ScalarProperty Name="IdNombreSalon" ColumnName="IdNombreSalon" />
           <ScalarProperty Name="TiempoReserva" ColumnName="TiempoReserva" />
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Cedula" ColumnName="Cedula" />
