@@ -247,3 +247,42 @@ C:\Users\LeonelLora\Desktop\Proyectos\Proyecto Final IDS2\Proyecto-Reserva-Salon
 C:\Users\LeonelLora\Desktop\Proyectos\Proyecto Final IDS2\Proyecto-Reserva-Salones\Reserva-Salones\Reserva-Salones\obj\Debug\Reserva-Salones.csproj.CopyComplete
 C:\Users\LeonelLora\Desktop\Proyectos\Proyecto Final IDS2\Proyecto-Reserva-Salones\Reserva-Salones\Reserva-Salones\obj\Debug\Reserva-Salones.dll
 C:\Users\LeonelLora\Desktop\Proyectos\Proyecto Final IDS2\Proyecto-Reserva-Salones\Reserva-Salones\Reserva-Salones\obj\Debug\Reserva-Salones.pdb
+C:\Users\carlo\Proyecto-Reserva-Salones\Reserva-Salones\Reserva-Salones\bin\Microsoft.AspNetCore.Hosting.Abstractions.dll
+C:\Users\carlo\Proyecto-Reserva-Salones\Reserva-Salones\Reserva-Salones\bin\Microsoft.AspNetCore.Hosting.Server.Abstractions.dll
+C:\Users\carlo\Proyecto-Reserva-Salones\Reserva-Salones\Reserva-Salones\bin\Microsoft.AspNetCore.Http.Abstractions.dll
+C:\Users\carlo\Proyecto-Reserva-Salones\Reserva-Salones\Reserva-Salones\bin\Microsoft.AspNetCore.Http.Extensions.dll
+C:\Users\carlo\Proyecto-Reserva-Salones\Reserva-Salones\Reserva-Salones\bin\Microsoft.AspNetCore.Http.Features.dll
+C:\Users\carlo\Proyecto-Reserva-Salones\Reserva-Salones\Reserva-Salones\bin\Microsoft.AspNetCore.Rewrite.dll
+C:\Users\carlo\Proyecto-Reserva-Salones\Reserva-Salones\Reserva-Salones\bin\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\carlo\Proyecto-Reserva-Salones\Reserva-Salones\Reserva-Salones\bin\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\carlo\Proyecto-Reserva-Salones\Reserva-Salones\Reserva-Salones\bin\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\carlo\Proyecto-Reserva-Salones\Reserva-Salones\Reserva-Salones\bin\Microsoft.Extensions.Hosting.Abstractions.dll
+C:\Users\carlo\Proyecto-Reserva-Salones\Reserva-Salones\Reserva-Salones\bin\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\carlo\Proyecto-Reserva-Salones\Reserva-Salones\Reserva-Salones\bin\Microsoft.Extensions.Options.dll
+C:\Users\carlo\Proyecto-Reserva-Salones\Reserva-Salones\Reserva-Salones\bin\Microsoft.Extensions.Primitives.dll
+C:\Users\carlo\Proyecto-Reserva-Salones\Reserva-Salones\Reserva-Salones\bin\Microsoft.Net.Http.Headers.dll
+C:\Users\carlo\Proyecto-Reserva-Salones\Reserva-Salones\Reserva-Salones\bin\System.Buffers.dll
+C:\Users\carlo\Proyecto-Reserva-Salones\Reserva-Salones\Reserva-Salones\bin\System.ComponentModel.Annotations.dll
+C:\Users\carlo\Proyecto-Reserva-Salones\Reserva-Salones\Reserva-Salones\bin\System.Memory.dll
+C:\Users\carlo\Proyecto-Reserva-Salones\Reserva-Salones\Reserva-Salones\bin\System.Numerics.Vectors.dll
+C:\Users\carlo\Proyecto-Reserva-Salones\Reserva-Salones\Reserva-Salones\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\carlo\Proyecto-Reserva-Salones\Reserva-Salones\Reserva-Salones\bin\System.Text.Encodings.Web.dll
+C:\Users\carlo\Proyecto-Reserva-Salones\Reserva-Salones\Reserva-Salones\bin\Microsoft.AspNetCore.Hosting.Abstractions.xml
+C:\Users\carlo\Proyecto-Reserva-Salones\Reserva-Salones\Reserva-Salones\bin\Microsoft.AspNetCore.Hosting.Server.Abstractions.xml
+C:\Users\carlo\Proyecto-Reserva-Salones\Reserva-Salones\Reserva-Salones\bin\Microsoft.AspNetCore.Http.Abstractions.xml
+C:\Users\carlo\Proyecto-Reserva-Salones\Reserva-Salones\Reserva-Salones\bin\Microsoft.AspNetCore.Http.Extensions.xml
+C:\Users\carlo\Proyecto-Reserva-Salones\Reserva-Salones\Reserva-Salones\bin\Microsoft.AspNetCore.Http.Features.xml
+C:\Users\carlo\Proyecto-Reserva-Salones\Reserva-Salones\Reserva-Salones\bin\Microsoft.AspNetCore.Rewrite.xml
+C:\Users\carlo\Proyecto-Reserva-Salones\Reserva-Salones\Reserva-Salones\bin\Microsoft.Extensions.Configuration.Abstractions.xml
+C:\Users\carlo\Proyecto-Reserva-Salones\Reserva-Salones\Reserva-Salones\bin\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\carlo\Proyecto-Reserva-Salones\Reserva-Salones\Reserva-Salones\bin\Microsoft.Extensions.FileProviders.Abstractions.xml
+C:\Users\carlo\Proyecto-Reserva-Salones\Reserva-Salones\Reserva-Salones\bin\Microsoft.Extensions.Hosting.Abstractions.xml
+C:\Users\carlo\Proyecto-Reserva-Salones\Reserva-Salones\Reserva-Salones\bin\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\carlo\Proyecto-Reserva-Salones\Reserva-Salones\Reserva-Salones\bin\Microsoft.Extensions.Options.xml
+C:\Users\carlo\Proyecto-Reserva-Salones\Reserva-Salones\Reserva-Salones\bin\Microsoft.Extensions.Primitives.xml
+C:\Users\carlo\Proyecto-Reserva-Salones\Reserva-Salones\Reserva-Salones\bin\Microsoft.Net.Http.Headers.xml
+C:\Users\carlo\Proyecto-Reserva-Salones\Reserva-Salones\Reserva-Salones\bin\System.Buffers.xml
+C:\Users\carlo\Proyecto-Reserva-Salones\Reserva-Salones\Reserva-Salones\bin\System.Memory.xml
+C:\Users\carlo\Proyecto-Reserva-Salones\Reserva-Salones\Reserva-Salones\bin\System.Numerics.Vectors.xml
+C:\Users\carlo\Proyecto-Reserva-Salones\Reserva-Salones\Reserva-Salones\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\carlo\Proyecto-Reserva-Salones\Reserva-Salones\Reserva-Salones\bin\System.Text.Encodings.Web.xml

@@ -3,9 +3,8 @@
     "",
     "\\Reserva-Salones",
     "\\Reserva-Salones\\Reserva-Salones",
-    "\\Reserva-Salones\\Reserva-Salones\\Controllers",
-    "\\Reserva-Salones\\Reserva-Salones\\Views"
+    "\\Reserva-Salones\\Reserva-Salones\\Controllers"
   ],
-  "SelectedNode": "\\Reserva-Salones\\Reserva-Salones\\Controllers\\FormulariosController.cs",
+  "SelectedNode": "\\Reserva-Salones\\Reserva-Salones\\Controllers\\SalonesController.cs",
   "PreviewInSolutionExplorer": false
 }
