@@ -18,7 +18,6 @@
             background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(79,157,232,1) 68%, rgba(16,50,122,1) 100%);
             color:whitesmoke;
             text-align: center;
-            margin-top: 20px
         }
         table th {
             text-align:center;
@@ -33,6 +32,13 @@
         .boton {
             margin: 14px 0;
         }
+        .tabla {
+            height: auto;
+            border: 6px solid #80c0fd;
+            border-radius: 6px;
+            margin-top: 20px;
+            background-color: #80c0fd;
+        }
     </style>
 </head>
 <body>
@@ -42,44 +48,10 @@
         <div class="form-group boton">
             @Html.ActionLink("Crear Fromulario", "Create", null, new { @class = "btn btn-info" })
         </div>
-        <table class="table">
-            <tr>
-                <th>
-                    @Html.DisplayNameFor(model => model.Cedula)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Nombre)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Telefono)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Email)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.MaxPersonas)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.FechaReserva)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.TiempoReserva)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.FechaCreacion)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Salon.Nombre)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Salon.TipoSalon.SalonTipo)
-                </th>
-                <th></th>
-            </tr>
-
-            @foreach (var item in Model)
-            {
+        <div class="tabla">
+            <table class="table">
                 <tr>
+<<<<<<< HEAD
                     <td>
                         @Html.DisplayFor(modelItem => item.Cedula)
                     </td>
@@ -118,10 +90,87 @@
                             @Html.ActionLink("Borrar", "Delete", new { id = item.Id }, new { @class = "btn btn-danger" })
                         </div>
                     </td>
+=======
+                    <th>
+                        @Html.DisplayNameFor(model => model.Cedula)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Nombre)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Telefono)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Email)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.MaxPersonas)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.FechaReserva)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.TiempoReserva)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.FechaCreacion)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Salon.Nombre)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Salon.TipoSalon.SalonTipo)
+                    </th>
+                    <th></th>
+>>>>>>> 6d45e3c1819493ba87f7537211bc6283e1db50a4
                 </tr>
-            }
 
-        </table>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Cedula)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Nombre)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Telefono)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Email)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.MaxPersonas)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.FechaReserva)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.TiempoReserva)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.FechaCreacion)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Salon.Nombre)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Salon.TipoSalon.SalonTipo)
+                        </td>
+                        <td>
+                            <div class=" = form-group">
+                                @Html.ActionLink("Editar", "Edit", new { id = item.Id }, new { @class = "btn btn-warning" })
+                            </div>
+                            <div class=" = form-group">
+                                @Html.ActionLink("Borrar", "Delete", new { id = item.Id }, new { @class = "btn btn-danger" })
+                            </div>
+                        </td>
+                    </tr>
+                }
+
+            </table>
+        </div>
     </div>
 </body>
 </html>

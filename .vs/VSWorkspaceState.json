@@ -1,6 +1,12 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\P_ReservaSalon",
+    "\\P_ReservaSalon\\P_ReservaSalon",
+    "\\P_ReservaSalon\\P_ReservaSalon\\Views",
+    "\\P_ReservaSalon\\P_ReservaSalon\\Views\\Formularios",
+    "\\P_ReservaSalon\\P_ReservaSalon\\Views\\Salons"
   ],
+  "SelectedNode": "\\P_ReservaSalon\\P_ReservaSalon\\Views\\Formularios\\Edit.cshtml",
   "PreviewInSolutionExplorer": false
 }
