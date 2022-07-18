@@ -36,7 +36,7 @@ namespace P_ReservaSalon
         [Required]
         
         [Display(Name = "Fecha de Reservacion")]
-        [DataType(DataType.DateTime)]
+        [DataType(DataType.Date)]
         public DateTime FechaReserva { get; set; }
 
         [Required]

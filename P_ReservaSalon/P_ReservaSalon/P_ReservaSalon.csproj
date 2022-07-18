@@ -183,6 +183,12 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <Content Include="Recursos\arte.png" />
+    <Content Include="Recursos\baile.png" />
+    <Content Include="Recursos\conferencia.png" />
+    <Content Include="Recursos\deporte.png" />
+    <Content Include="Recursos\fiesta.png" />
+    <Content Include="Recursos\restaurante.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <EntityDeploy Include="Model1.edmx">
