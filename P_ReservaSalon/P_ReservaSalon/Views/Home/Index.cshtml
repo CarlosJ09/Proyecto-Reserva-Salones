@@ -24,43 +24,58 @@
         }
 
         .jumbotron {
-            background-color: rgba(49,69,165,255)
+            background-color: rgba(49,69,165,255);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .btn {
+            margin: 12px 6px;
+        }
+
+        .main-container {
+            display: flex;
+            flex-direction: column;
         }
     </style>
 </head>
     <body class="edificio">
-        <div class="jumbotron">
-            <div class="btn">
-                <h3><b>ARTES</b></h3>
-                
-                <img src="~/Recursos/arte.png" width="295" height="235"  />
-                
-                
-            </div>
-            <div class="btn">
-                <h3><b>BAILE</b></h3>
-                <img src="~/Recursos/baile.png" width="295" height="235"  />
-            </div>
-            <div class="btn">
-                <h3><b>CONFERENCIAS</b></h3>
-                <img src="~/Recursos/conferencia.png" width="295" height="235" />
-            </div>
-            <div class="btn">
-                <h3><b>RESTAURANTES</b></h3>
-                <img src="~/Recursos/restaurante.png" width="295" height="235" />
-            </div>
-            <div class="btn">
-                <h3><b>DEPORTIVOS</b></h3>
-                <img src="~/Recursos/deporte.png" width="295" height="235" />
-            </div>
-            <div class="btn">
-                <h3><b>FIESTAS</b></h3>
-                <img src="~/Recursos/fiesta.png" width="295" height="235" />
-            </div>
+        <div class="main-container">
 
+            <h1 class="text-center" style="margin: 60px 0; color: whitesmoke">Inicio</h1>
+
+            <div class="jumbotron">
+                <div class="btn">
+                    <h3><b>ARTES</b></h3>
+
+                    <img src="~/Recursos/arte.png" width="295" height="235" />
+
+                </div>
+                <div class="btn">
+                    <h3><b>BAILE</b></h3>
+                    <img src="~/Recursos/baile.png" width="295" height="235" />
+                </div>
+                <div class="btn">
+                    <h3><b>CONFERENCIAS</b></h3>
+                    <img src="~/Recursos/conferencia.png" width="295" height="235" />
+                </div>
+                <div class="btn">
+                    <h3><b>RESTAURANTES</b></h3>
+                    <img src="~/Recursos/restaurante.png" width="295" height="235" />
+                </div>
+                <div class="btn">
+                    <h3><b>DEPORTIVOS</b></h3>
+                    <img src="~/Recursos/deporte.png" width="295" height="235" />
+                </div>
+                <div class="btn">
+                    <h3><b>FIESTAS</b></h3>
+                    <img src="~/Recursos/fiesta.png" width="295" height="235" />
+                </div>
+
+            </div>
         </div>
-
-        
     </body>
 
 </html>
