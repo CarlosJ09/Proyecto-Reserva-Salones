@@ -28,17 +28,66 @@
             background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(36,105,172,1) 68%, rgba(16,50,122,1) 100%);
         }
     </style>
+    <style>
+
+        ul
+        {
+            list-style-type: none;
+        }
+
+        .heading
+        {
+            text-align: center;
+            font-size: 20px;
+            font-style: italic;
+        }
+
+        #Cajas
+        {
+            background-color: transparent;
+            display: flex;
+            margin: 5px;
+            justify-content: space-between;
+            width: 1100px;
+            height: 450px;
+            margin-top: 80px   
+        }
+
+        #Expertos
+        {
+            font-size: 30px;  
+            text-align: center;  
+            margin-top: 140px;
+            margin-bottom: 10px;
+            font-style: italic;
+            
+        }
+
+        #Cajas2
+        {
+            list-style-type:disc;
+            margin-left: 50px;
+        }
+
+        .titulo
+        {
+            text-align:left;
+            font-size: 20px;
+            font-style: italic;
+        }
+
+        </style>
 
 </head>
 <body>
-    
+
     <h2 style="color:whitesmoke"><b>Sobre Nosotros</b></h2>
-    
+
     <br>
 
     <center>
         <div id="centro">
-            <h3 class="center"><b>Mision</b></h3>
+            <h3 class="center" style="padding-top:20px"><b>Mision</b></h3>
 
             <p class="center">
                 <br>
@@ -51,24 +100,40 @@
         </div>
     </center>
     <br>
-    
-        <h3 style="color:whitesmoke"><b>Fundadores</b></h3>
-        <br>
-        <ul class=" center" >
+
+    <section id="seccion">
+        <h2 id="Expertos" style="color:white">Conozca a nuestros fundadores</h2>
+        <ul id="Cajas">
             <li>
-                Mario Leonel Lora Lara
+                <figure id="Playa">
+                    <h6 class="heading">Mario Lora, <br>Agente de Ventas</h6>
+                </figure>
             </li>
             <li>
-                Mario Leonel Lora Lara
+                <figure id="Playa">
+                    <h6 class="heading">Adam Guerrero, <br>Agente de Ventas</h6>
+                </figure>
             </li>
             <li>
-                Mario Leonel Lora Lara
+                <figure id="constanza">
+                    <h6 class="heading">
+                        Carlos M. Jimenez,
+                        <br>Agente de Ventas
+                    </h6>
+                </figure>
             </li>
             <li>
-                Mario Leonel Lora Lara
+                <figure>
+                    <h6 class="heading">
+                        Juan Manuel Muñoz,
+                        <br>Gerente General de Eventos
+                    </h6>
+                </figure>
             </li>
         </ul>
-    
+    </section>
+
+
 
 </body>
 </html>
