@@ -188,6 +188,7 @@
     <Content Include="Recursos\conferencia.png" />
     <Content Include="Recursos\deporte.png" />
     <Content Include="Recursos\fiesta.png" />
+    <Content Include="Recursos\pngwing.com %281%29.png" />
     <Content Include="Recursos\restaurante.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />

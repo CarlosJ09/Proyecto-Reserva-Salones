@@ -1,4 +1,4 @@
-﻿@model P_ReservaSalon.Salon
+﻿
 
 @{
     ViewBag.Title = "Home Page";
@@ -12,8 +12,10 @@
             
         }
         
-        .btn {
-            border:ridge;
+        .container h3 {
+            position:absolute;
+
+            
             
         }
         h3 {
@@ -28,39 +30,41 @@
         }
     </style>
 </head>
-    <body class="edificio">
-        <div class="jumbotron">
-            <div class="btn">
+<body class="edificio">
+    <div class="jumbotron">
+        <section class="container">
+            <a href="~/Views/Salons/Create.cshtml" >
                 <h3><b>ARTES</b></h3>
-                
-                <img src="~/Recursos/arte.png" width="295" height="235"  />
-                
-                
-            </div>
-            <div class="btn">
+
+                <img src="~/Recursos/arte.png" width="295" height="235" />
+
+
+            </a>
+
+            <a href="https://localhost:44309/Salons/Create">
                 <h3><b>BAILE</b></h3>
-                <img src="~/Recursos/baile.png" width="295" height="235"  />
-            </div>
-            <div class="btn">
+                <img src="~/Recursos/baile.png" width="295" height="235" />
+            </a>
+            <a href="~/Views/Salons/Delete.cshtml">
                 <h3><b>CONFERENCIAS</b></h3>
                 <img src="~/Recursos/conferencia.png" width="295" height="235" />
-            </div>
-            <div class="btn">
+            </a>
+            <a href="~/Views/Salons/Details.cshtml">
                 <h3><b>RESTAURANTES</b></h3>
                 <img src="~/Recursos/restaurante.png" width="295" height="235" />
-            </div>
-            <div class="btn">
+            </a>
+            <a href="~/Views/Salons/Edit.cshtml">
                 <h3><b>DEPORTIVOS</b></h3>
                 <img src="~/Recursos/deporte.png" width="295" height="235" />
-            </div>
-            <div class="btn">
+            </a>
+            <a href="~/Views/Salons/Index.cshtml">
                 <h3><b>FIESTAS</b></h3>
                 <img src="~/Recursos/fiesta.png" width="295" height="235" />
-            </div>
+            </a>
+            </section>
+   </div>
+    
 
-        </div>
-
-        
-    </body>
+</body>
 
 </html>

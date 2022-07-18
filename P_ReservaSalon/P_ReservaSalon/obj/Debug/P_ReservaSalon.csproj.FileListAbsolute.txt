@@ -166,7 +166,6 @@ C:\Users\LeonelLora\Desktop\Proyectos\Proyecto Final IDS2\Proyecto-Reserva-Salon
 C:\Users\LeonelLora\Desktop\Proyectos\Proyecto Final IDS2\Proyecto-Reserva-Salones\P_ReservaSalon\P_ReservaSalon\obj\Debug\P_ReservaSalon.dll
 C:\Users\LeonelLora\Desktop\Proyectos\Proyecto Final IDS2\Proyecto-Reserva-Salones\P_ReservaSalon\P_ReservaSalon\obj\Debug\P_ReservaSalon.pdb
 =======
-<<<<<<< HEAD
 C:\Users\carlo\Proyecto-Reserva-Salones\P_ReservaSalon\P_ReservaSalon\bin\P_ReservaSalon.dll.config
 C:\Users\carlo\Proyecto-Reserva-Salones\P_ReservaSalon\P_ReservaSalon\bin\P_ReservaSalon.dll
 C:\Users\carlo\Proyecto-Reserva-Salones\P_ReservaSalon\P_ReservaSalon\bin\P_ReservaSalon.pdb
@@ -250,7 +249,6 @@ C:\Users\carlo\Proyecto-Reserva-Salones\P_ReservaSalon\P_ReservaSalon\obj\Debug\
 C:\Users\carlo\Proyecto-Reserva-Salones\P_ReservaSalon\P_ReservaSalon\obj\Debug\P_ReservaSalon.csproj.CopyComplete
 C:\Users\carlo\Proyecto-Reserva-Salones\P_ReservaSalon\P_ReservaSalon\obj\Debug\P_ReservaSalon.dll
 C:\Users\carlo\Proyecto-Reserva-Salones\P_ReservaSalon\P_ReservaSalon\obj\Debug\P_ReservaSalon.pdb
-=======
 C:\Users\Adamg\Desktop\Proyecto-Reserva-Salones\P_ReservaSalon\P_ReservaSalon\bin\P_ReservaSalon.dll.config
 C:\Users\Adamg\Desktop\Proyecto-Reserva-Salones\P_ReservaSalon\P_ReservaSalon\bin\P_ReservaSalon.dll
 C:\Users\Adamg\Desktop\Proyecto-Reserva-Salones\P_ReservaSalon\P_ReservaSalon\bin\P_ReservaSalon.pdb
