@@ -1,0 +1,110 @@
+﻿@model P_ReservaSalon.Formulario
+
+@{
+    ViewBag.Title = "Delete";
+}
+<html>
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <style>
+        body {
+            font-family: "Audiowide", sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-group">
+        <h2>Borrar Formulario</h2>
+    </div>
+
+<h3>Estas seguro que deseas borrar este fomulario?</h3>
+<div class=" form-group">
+
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Cedula)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cedula)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Telefono)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Telefono)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MaxPersonas)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MaxPersonas)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaReserva)
+        </dt>
+
+        <div class="form-group">
+            @Html.DisplayFor(model => model.FechaReserva)
+        </div>
+
+        <div class="form-group">
+            @Html.DisplayNameFor(model => model.TiempoReserva)
+        </div>
+
+        <div class="form-group">
+            @Html.DisplayFor(model => model.TiempoReserva)
+        </div>
+
+        <div class="form-group">
+            @Html.DisplayNameFor(model => model.FechaCreacion)
+        </div>
+
+        <div class="form-group">
+            @Html.DisplayFor(model => model.FechaCreacion)
+        </div>
+
+        <div class="form-group">
+            @Html.DisplayNameFor(model => model.Salon.Nombre)
+        </div>
+
+        <div class="form-group">
+            @Html.DisplayFor(model => model.Salon.Nombre)
+        </div>
+
+    </dl>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-danger" /> |
+            @Html.ActionLink("Volver", "Index")
+        </div>
+    }
+</div>
+</body>
+</html>

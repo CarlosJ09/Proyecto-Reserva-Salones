@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012.Azure" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Formulario">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="Cedula" Type="nvarchar" MaxLength="80" Nullable="false" />
+    <Property Name="Nombre" Type="nvarchar" MaxLength="80" Nullable="false" />
+    <Property Name="Telefono" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Email" Type="nvarchar" MaxLength="100" />
+    <Property Name="IdSalon" Type="int" Nullable="false" />
+    <Property Name="MaxPersonas" Type="int" Nullable="false" />
+    <Property Name="FechaReserva" Type="datetime" Nullable="false" />
+    <Property Name="TiempoReserva" Type="time" Precision="7" Nullable="false" />
+    <Property Name="FechaCreacion" Type="date" />
+  </EntityType>
+  <EntityType Name="Salon">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombre" Type="nvarchar" MaxLength="80" Nullable="false" />
+    <Property Name="IdTipoSalon" Type="int" Nullable="false" />
+    <Property Name="Ubicacion" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="Disponible" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="TipoSalon">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SalonTipo" Type="nvarchar" MaxLength="40" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_Formulario_Salon1">
+    <End Role="Salon" Type="Self.Salon" Multiplicity="1" />
+    <End Role="Formulario" Type="Self.Formulario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Salon">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Formulario">
+        <PropertyRef Name="IdSalon" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Salon_TipoSalon">
+    <End Role="TipoSalon" Type="Self.TipoSalon" Multiplicity="1" />
+    <End Role="Salon" Type="Self.Salon" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TipoSalon">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Salon">
+        <PropertyRef Name="IdTipoSalon" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="ModelStoreContainer">
+    <EntitySet Name="Formulario" EntityType="Self.Formulario" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Salon" EntityType="Self.Salon" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TipoSalon" EntityType="Self.TipoSalon" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Formulario_Salon1" Association="Self.FK_Formulario_Salon1">
+      <End Role="Salon" EntitySet="Salon" />
+      <End Role="Formulario" EntitySet="Formulario" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Salon_TipoSalon" Association="Self.FK_Salon_TipoSalon">
+      <End Role="TipoSalon" EntitySet="TipoSalon" />
+      <End Role="Salon" EntitySet="Salon" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
