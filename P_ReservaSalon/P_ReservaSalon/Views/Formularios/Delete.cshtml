@@ -9,137 +9,103 @@
     <style>
         body {
             font-family: "Audiowide", sans-serif;
+            background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/221808/sky.jpg");
+            color: aliceblue;
         }
-        
     </style>
 </head>
 <body>
     <div class="form-group">
-        <h2 style="color:whitesmoke"><b>Borrar Formulario</b></h2>
+        <h2>Borrar Formulario</h2>
     </div>
-    <div>
-        <h3 style="color:whitesmoke"><b>Estas seguro que deseas borrar este fomulario?</b></h3>
-    </div>
+
+    <h3>Estas seguro que deseas borrar este fomulario?</h3>
     <div class=" form-group">
 
         <hr />
         <dl class="dl-horizontal">
             <dt>
-
                 @Html.DisplayNameFor(model => model.Cedula)
-
             </dt>
 
             <dd>
-
                 @Html.DisplayFor(model => model.Cedula)
-
             </dd>
 
             <dt>
-
                 @Html.DisplayNameFor(model => model.Nombre)
-
             </dt>
 
             <dd>
-
                 @Html.DisplayFor(model => model.Nombre)
-
             </dd>
 
             <dt>
-
                 @Html.DisplayNameFor(model => model.Telefono)
-
             </dt>
 
             <dd>
-
                 @Html.DisplayFor(model => model.Telefono)
-
             </dd>
 
             <dt>
-
                 @Html.DisplayNameFor(model => model.Email)
-                <br />
             </dt>
 
             <dd>
-
                 @Html.DisplayFor(model => model.Email)
-
             </dd>
 
             <dt>
-
                 @Html.DisplayNameFor(model => model.MaxPersonas)
-
             </dt>
 
             <dd>
-
                 @Html.DisplayFor(model => model.MaxPersonas)
-
             </dd>
 
             <dt>
-
                 @Html.DisplayNameFor(model => model.FechaReserva)
-
             </dt>
 
-            <dt>
-
+            <div class="form-group">
                 @Html.DisplayFor(model => model.FechaReserva)
+            </div>
 
-            </dt>
-
-            <dt>
-
+            <div class="form-group">
                 @Html.DisplayNameFor(model => model.TiempoReserva)
+            </div>
 
-            </dt>
-
-            <dt>
-
+            <div class="form-group">
                 @Html.DisplayFor(model => model.TiempoReserva)
+            </div>
 
-            </dt>
-
-            <dt>
+            <div class="form-group">
                 @Html.DisplayNameFor(model => model.FechaCreacion)
-            </dt>
+            </div>
 
-            <dt>
-
+            <div class="form-group">
                 @Html.DisplayFor(model => model.FechaCreacion)
+            </div>
 
-            </dt>
-
-            <dt>
-
+            <div class="form-group">
                 @Html.DisplayNameFor(model => model.Salon.Nombre)
+            </div>
 
-            </dt>
-
-            <dt>
-
+            <div class="form-group">
                 @Html.DisplayFor(model => model.Salon.Nombre)
-
-            </dt>
+            </div>
 
         </dl>
-        <div>
-            <input type="submit" value="Borrar" class="btn btn-danger" /> |
-            @Html.ActionLink("Volver", "Index")
-        </div>
+
         @using (Html.BeginForm())
         {
             @Html.AntiForgeryToken()
 
-
+            <div class="form-actions no-color">
+                <input type="submit" value="Delete" class="btn btn-danger" /> |
+                @Html.ActionLink("Volver", "Index")
+            </div>
         }
     </div>
 </body>
